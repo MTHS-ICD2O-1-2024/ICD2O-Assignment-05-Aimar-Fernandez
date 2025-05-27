@@ -13,15 +13,15 @@ function myButtonClicked() {
   const numberOfTerms = parseInt(document.getElementById("number-of-terms").value)
   if(numberOfTerms < 1) {
     document.getElementById("answer").innerHTML = 
-      "Error, number must be positive integer"
+      "<p>Error, number must be positive integer</p>"
   }
-  else if (numberOfTerms = 1) {
+  else if (numberOfTerms == 1) {
     document.getElementById("answer").innerHTML = 
-      "Number is: 2"
+      "<p>Number is: 2</p>"
   }
-  else if (numberOfTerms = 2) {
+  else if (numberOfTerms == 2) {
     document.getElementById("answer").innerHTML = 
-      "Number is: 1"
+      "<p>Number is: 1</p>"
   }
   else {
     for (let counter = 2; counter < numberOfTerms; counter++) {
@@ -30,6 +30,6 @@ function myButtonClicked() {
       termTwo = termAnswer
     }
     document.getElementById("answer").innerHTML = 
-    "<p>Number is: " + termAnswer + ""
+    "<p>Number is: " + termAnswer + "</p>"
   }
 }
